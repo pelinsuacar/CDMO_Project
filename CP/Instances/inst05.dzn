@@ -1,0 +1,8 @@
+num_couriers = 2;
+num_items = 3;
+load_size = [18, 30];
+item_size = [20, 17, 6];
+distances = [| 0, 21, 86, 99
+            | 21, 0, 71, 80
+            | 92, 71, 0, 61
+            | 59, 80, 61, 0|];
