@@ -1,11 +1,4 @@
 #!/bin/bash
-
-# Check if the correct number of arguments is provided
-if [ "$#" -ne 4 ]; then
-    echo "Usage: ./script.sh SOLVER MODEL OUTPUT_FILE INSTANCE_NAME"
-    exit 1
-fi
-
 TIME_LIMIT=300000
 
 # Capture the arguments
