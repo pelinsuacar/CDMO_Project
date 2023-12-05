@@ -1,36 +1,43 @@
 #!/bin/bash
-TIME_LIMIT=300000
+if [ $# -eq 4 ] 
+then
+    echo ""
+else
+    echo "Invalid Argument: Please pass 4 arguments"
+    exit 1
+fi
 
-# Capture the arguments
-SOLVER="$1"
-MODEL="$2"
-OUTPUT_FILE="$3"
-INSTANCE_NAME="$4"
+timeout=300000
 
-# Specify the full path to the instance
-INSTANCE_PATH="/Instances/$INSTANCE_NAME.dzn"
-MODEL_PATH="/Models/$MODEL.mzn"
+#Inputs for Minizinc
+solver="$1"
+model="$2"
+instance="$3"
+output_file="$4"
 
-# Empty the output file if it exists
-> "$OUTPUT_FILE"
+#Paths of the model and instance
+inst_path="./Instances/$instance"
+model_path="./Models/$model"
 
-echo "Solver: $SOLVER" >> "$OUTPUT_FILE"
-echo "Model: $MODEL" >> "$OUTPUT_FILE"
+#Clean output file
+> "$output_file"
 
-echo "" >> "$OUTPUT_FILE"
+echo "Solver: $solver" >> "$output_file"
+echo "Model: $model" >> "$output_file"
 
-# Extract the instance name without the extension
-instance_name_no_ext="${INSTANCE_NAME%.dzn}"
+echo "" >> "$output_file"
 
-# Print the instance name to the output file
-echo "Running $instance_name_no_ext" >> "$OUTPUT_FILE"
+echo "Running $instance" >> "$output_file"
 
-# Print the command being executed
-echo "Running command:"
-echo "minizinc --solver $SOLVER --time-limit $TIME_LIMIT --output-time $MODEL_PATH $INSTANCE_PATH"
+#Print the minizinc command
+echo "Running minizinc --solver $solver --time-limit $timeout $model_path $inst_path"
 
-# Run the minizinc command for the specified instance and save the output to the txt file
-minizinc --solver $SOLVER --time-limit $TIME_LIMIT \
-         --output-time $MODEL_PATH $INSTANCE_PATH >> "$OUTPUT_FILE"
+SECONDS=0
+#Run the minizinc command and print output to the file specified
+minizinc --solver $solver --time-limit $timeout $model_path $inst_path >> "$output_file"
+duration=$SECONDS
 
-echo "" >> "$OUTPUT_FILE"
+echo "Finished in $duration seconds"
+echo "Finished in $duration seconds" >> "$output_file"
+
+echo "" >> "$output_file"
