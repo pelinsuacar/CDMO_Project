@@ -26,10 +26,11 @@ echo "Solver: $solver" >> "$output_file"
 echo "Model: $model" >> "$output_file"
 
 echo "" >> "$output_file"
+instance_dir="./Instances"
 
-for instance in ./Instances; do
+for instance in "$instance_dir"/*.dzn; do
 
-	echo "Running $instance" >> "$output_file"
+ 	echo "Running $(basename "$instance")" >> "$output_file"
 
 	#Print the minizinc command
 	echo "Running minizinc --solver $solver --time-limit $timeout $model_path $instance"
@@ -43,3 +44,4 @@ for instance in ./Instances; do
 	echo "Finished in $duration seconds" >> "$output_file"
 
 	echo "" >> "$output_file"
+ done
