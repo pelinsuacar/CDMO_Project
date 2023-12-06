@@ -30,14 +30,11 @@ echo "" >> "$output_file"
 echo "Running $instance" >> "$output_file"
 
 #Print the minizinc command
-echo "Running minizinc --solver $solver --time-limit $timeout $model_path $inst_path"
+echo "Running minizinc --solver $solver --time-limit $timeout --output-time $model_path $inst_path"
 
 SECONDS=0
 #Run the minizinc command and print output to the file specified
-minizinc --solver $solver --time-limit $timeout $model_path $inst_path >> "$output_file"
+minizinc --solver $solver --time-limit $timeout --output-time $model_path $inst_path >> "$output_file"
 duration=$SECONDS
 
 echo "Finished in $duration seconds"
-echo "Finished in $duration seconds" >> "$output_file"
-
-echo "" >> "$output_file"
