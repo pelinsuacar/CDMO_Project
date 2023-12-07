@@ -25,10 +25,11 @@ output_file="${model_name}.txt"
 echo "Solver: $solver" >> "$output_file"
 echo "Model: $model" >> "$output_file"
 
-echo "" >> "$output_file"
 instance_dir="./Instances"
 
 for instance in "$instance_dir"/*.dzn; do
+
+	echo "" >> "$output_file"
 
  	echo "Running $(basename "$instance")" >> "$output_file"
 
@@ -42,6 +43,4 @@ for instance in "$instance_dir"/*.dzn; do
 
 	echo "Finished in $duration seconds"
 	echo "Finished in $duration seconds" >> "$output_file"
-
-	echo "" >> "$output_file"
  done
