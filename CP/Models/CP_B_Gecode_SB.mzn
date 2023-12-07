@@ -27,7 +27,7 @@ constraint forall(i in CUSTOMER)
 
 %Requires that the number of distinct values in vehicle should be the number of used couriers
 
-%constraint nvalue(used_couriers, vehicle); (check if it is reduntant!!!!!!!!!!!!)
+constraint nvalue(used_couriers, vehicle);
 constraint max(vehicle) = used_couriers;
 
 %constraint num_couriers = used_couriers;
