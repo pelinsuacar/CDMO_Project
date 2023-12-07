@@ -28,10 +28,6 @@ constraint forall(i in VEHICLE)(alldifferent(succ[i,..]));
 %capacity constraint
 constraint forall(i in VEHICLE)
                   (sum(j in NODES where succ[i,j]!=j /\ succ[i,j]!=num_items+1)(item_size[succ[i,j]])<= load_size[i]);
-                  
-       
-include "lex_lesseq.mzn";
-include "alldifferent.mzn";
 
 %implied constraint                
 %if vehicle i does not leave the depot(meaning that it cannot visit any customer) then 
