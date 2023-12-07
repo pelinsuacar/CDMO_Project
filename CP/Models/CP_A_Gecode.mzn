@@ -1,5 +1,4 @@
 include "globals.mzn";
-include "alldifferent.mzn";
 
 int: num_items; % Item number
 int: num_couriers; % Vehicle number
