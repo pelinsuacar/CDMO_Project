@@ -1,0 +1,189 @@
+Solver: chuffed
+Model: CP_B_Chuffed_SB.mzn
+
+Running inst01.dzn
+predecessor = [3, 7, 4, 7, 2, 5]
+last = [1, 0, 0, 0, 0, 1]
+is_pred = [0, 1, 1, 1, 1, 0]
+vehicle = [1, 2, 1, 1, 2, 2]
+total_couriers = 2
+used_couriers = 2
+Maximum Distance = 14
+----------
+==========
+% [max_dist > 13]
+Finished in 1 seconds
+
+Running inst02.dzn
+predecessor = [4, 3, 10, 10, 10, 10, 2, 10, 10]
+last = [1, 0, 0, 0, 1, 1, 1, 1, 1]
+is_pred = [0, 1, 1, 1, 0, 0, 0, 0, 0]
+vehicle = [4, 1, 1, 4, 5, 6, 1, 3, 2]
+total_couriers = 6
+used_couriers = 6
+Maximum Distance = 226
+----------
+==========
+% [max_dist > 225]
+Finished in 8 seconds
+
+Running inst03.dzn
+predecessor = [7, 4, 6, 5, 8, 8, 8]
+last = [1, 1, 1, 0, 0, 0, 0]
+is_pred = [0, 0, 0, 1, 1, 1, 1]
+vehicle = [3, 1, 2, 1, 1, 2, 3]
+total_couriers = 3
+used_couriers = 3
+Maximum Distance = 12
+----------
+==========
+% [max_dist > 11]
+Finished in 0 seconds
+
+Running inst04.dzn
+predecessor = [2, 11, 11, 5, 11, 11, 11, 11, 11, 11]
+last = [1, 0, 1, 1, 0, 1, 1, 1, 1, 1]
+is_pred = [0, 1, 0, 0, 1, 0, 0, 0, 0, 0]
+vehicle = [4, 4, 5, 2, 2, 7, 3, 8, 6, 1]
+total_couriers = 8
+used_couriers = 8
+Maximum Distance = 220
+----------
+==========
+% [max_dist > 219]
+Finished in 98 seconds
+
+Running inst05.dzn
+predecessor = [4, 4, 1]
+last = [0, 1, 1]
+is_pred = [1, 0, 0]
+vehicle = [2, 1, 2]
+total_couriers = 2
+used_couriers = 2
+Maximum Distance = 206
+----------
+==========
+% [max_dist > 205]
+Finished in 0 seconds
+
+Running inst06.dzn
+predecessor = [2, 3, 9, 9, 9, 9, 9, 9]
+last = [1, 0, 0, 1, 1, 1, 1, 1]
+is_pred = [0, 1, 1, 0, 0, 0, 0, 0]
+vehicle = [4, 4, 4, 5, 3, 1, 6, 2]
+total_couriers = 6
+used_couriers = 6
+Maximum Distance = 322
+----------
+==========
+% [max_dist > 321]
+Finished in 3 seconds
+
+Running inst07.dzn
+predecessor = [13, 5, 7, 10, 11, 8, 2, 3, 6, 18, 12, 4, 18, 18, 18, 18, 18]
+last = [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1]
+is_pred = [0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0]
+vehicle = [4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 5, 6, 3, 2]
+total_couriers = 6
+used_couriers = 6
+Maximum Distance = 406
+----------
+% Time limit exceeded!
+Finished in 300 seconds
+
+Running inst08.dzn
+predecessor = [2, 11, 11, 5, 11, 11, 11, 11, 11, 11]
+last = [1, 0, 1, 1, 0, 1, 1, 1, 1, 1]
+is_pred = [0, 1, 0, 0, 1, 0, 0, 0, 0, 0]
+vehicle = [3, 3, 5, 1, 1, 6, 2, 7, 8, 4]
+total_couriers = 8
+used_couriers = 8
+Maximum Distance = 186
+----------
+==========
+% [max_dist > 185]
+Finished in 57 seconds
+
+Running inst09.dzn
+predecessor = [2, 3, 4, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14]
+last = [1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+is_pred = [0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+vehicle = [2, 2, 2, 2, 6, 1, 8, 4, 9, 5, 10, 7, 3]
+total_couriers = 10
+used_couriers = 10
+Maximum Distance = 436
+----------
+% Time limit exceeded!
+Finished in 300 seconds
+
+Running inst10.dzn
+predecessor = [2, 3, 14, 1, 14, 14, 14, 14, 14, 14, 14, 14, 14]
+last = [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+is_pred = [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+vehicle = [1, 1, 1, 1, 7, 5, 3, 8, 4, 9, 10, 6, 2]
+total_couriers = 10
+used_couriers = 10
+Maximum Distance = 244
+----------
+% Time limit exceeded!
+Finished in 300 seconds
+
+Running inst11.dzn
+=====UNKNOWN=====
+Finished in 302 seconds
+
+Running inst12.dzn
+=====UNKNOWN=====
+Finished in 302 seconds
+
+Running inst13.dzn
+predecessor = [2, 3, 4, 5, 6, 7, 8, 9, 21, 11, 22, 15, 20, 1, 25, 14, 18, 23, 13, 16, 12, 19, 48, 40, 17, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 48, 41, 42, 45, 24, 10, 46, 47, 48]
+last = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
+is_pred = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1]
+vehicle = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 1, 3, 3, 3]
+total_couriers = 3
+used_couriers = 3
+Maximum Distance = 1478
+----------
+% Time limit exceeded!
+Finished in 300 seconds
+
+Running inst14.dzn
+=====UNKNOWN=====
+Finished in 303 seconds
+
+Running inst15.dzn
+=====UNKNOWN=====
+Finished in 303 seconds
+
+Running inst16.dzn
+predecessor = [20, 3, 4, 19, 18, 10, 48, 5, 11, 7, 6, 9, 8, 2, 12, 14, 15, 17, 13, 21, 22, 24, 16, 25, 26, 27, 28, 29, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48]
+last = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+is_pred = [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+vehicle = [6, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, 6, 6, 3, 6, 6, 6, 6, 6, 6, 15, 11, 10, 8, 5, 2, 18, 14, 19, 16, 12, 7, 1, 20, 17, 13, 9, 4]
+total_couriers = 20
+used_couriers = 20
+Maximum Distance = 927
+----------
+% Time limit exceeded!
+Finished in 302 seconds
+
+Running inst17.dzn
+=====UNKNOWN=====
+Finished in 303 seconds
+
+Running inst18.dzn
+=====UNKNOWN=====
+Finished in 303 seconds
+
+Running inst19.dzn
+=====UNKNOWN=====
+Finished in 301 seconds
+
+Running inst20.dzn
+=====UNKNOWN=====
+Finished in 304 seconds
+
+Running inst21.dzn
+=====UNKNOWN=====
+Finished in 302 seconds
