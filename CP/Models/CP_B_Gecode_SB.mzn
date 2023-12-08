@@ -72,6 +72,7 @@ output [
     "last = ", show(last), "\n",
     "is_pred = ", show(is_pred), "\n",
     "vehicle = ", show(vehicle), "\n",
+    "total_couriers = ", show(num_couriers), "\n",
     "used_couriers = ", show(used_couriers), "\n",
     "Maximum Distance = ", show(max_dist), "\n"
 ];
