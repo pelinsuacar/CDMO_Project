@@ -1,0 +1,1 @@
+{"cdcl_he": {"time": 0, "optimal": true, "obj": 206, "sol": [[2], [1, 3]]}, "wsat_he": {"time": 0, "optimal": true, "obj": 206, "sol": [[2], [1, 3]]}, "cdcl_bin": {"time": 0, "optimal": true, "obj": 206, "sol": [[2], [1, 3]]}, "wsat_bin": {"time": 0, "optimal": true, "obj": 206, "sol": [[2], [1, 3]]}}
