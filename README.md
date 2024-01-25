@@ -19,7 +19,7 @@ sudo docker run -it cdmo
 ### CP
 To run the code for the Constraint Programming part, run the following commands:
 ```
-bash ./run_CP_all_instances.sh <method> <model_name.mzc>
+bash ./CP/run_CP_all_instances.sh <method> <model_name.mzc>
 ```
 Where the possible methods are:
 - chuffed
