@@ -6,7 +6,7 @@ Project exam for the course in "Combinatorial Decision Making and Optimization" 
 - Alessandro Folloni
 
 # Docker instructions
-First download the dockerfile, then on the working directory run:
+First download only the <a href="https://github.com/pelinsuacar/CDMO_Project/blob/main/Dockerfile">Dockerfile</a>, then on the working directory run:
 
 ```
 sudo docker build . -t cdmo
