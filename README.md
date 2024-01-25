@@ -11,8 +11,19 @@ First download the dockerfile, then on the working directory run:
 ```
 sudo docker build . -t cdmo
 ```
+Then to run it and enter the shell:
+```
+sudo docker run -it cdmo
+```
 
 ### CP
+To run the code for the Constraint Programming part, run the following commands:
+```
+bash ./run_CP_all_instances.sh <method> <model_name.mzc>
+```
+Where the possible methods are:
+- chuffed
+- gecode
 
 ### SAT
 
