@@ -16,6 +16,8 @@ Then to run it and enter the shell:
 ```
 docker run -it cdmo
 ```
+## Run the models
+**NOTE:** Be sure to stay on the main /src directory when running all the commands below!
 
 ### CP
 To run the code for the Constraint Programming part, run the following commands:
@@ -29,6 +31,11 @@ Where the possible methods are:
 Here is an example for the _CP_A_Chuffed.mzc_ model:
 ```
 bash ./CP/run_CP_all_instances.sh chuffed CP_A_Chuffed.mzn
+```
+
+After running all the models, to generate the final json files, run:
+```
+python3 ./CP/CP_json_writer.py
 ```
 
 ### SAT
