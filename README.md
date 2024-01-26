@@ -1,5 +1,5 @@
 # CDMO_Project
-Project exam for the course in "Combinatorial Decision Making and Optimization" of the Master's degree in Artificial Intelligence, University of Bologna.
+Project exam for the course in _"Combinatorial Decision Making and Optimization"_ of the Master's degree in Artificial Intelligence, University of Bologna.
 ### Contributors
 - Pelinsu Acar
 - Daniele Napolitano
@@ -26,6 +26,11 @@ Where the possible methods are:
 - chuffed
 - gecode
 
+Here is an example for the _CP_A_Chuffed.mzc_:
+```
+bash ./CP/run_CP_all_instances.sh chuffed /CP/CP_A_Chuffed.mzn
+```
+
 ### SAT
 To run the SAT models, run:
 ```
@@ -47,6 +52,12 @@ env = gp.Env(params=params)
 ```
 After doing that, you can run the model with the following command:
 ```
-python3 /MIP/MIP.py
+python3 ./MIP/MIP.py
+```
+
+### SMT
+To run the SMT part, run:
+```
+python3 ./SMT/SMT.py
 ```
 
