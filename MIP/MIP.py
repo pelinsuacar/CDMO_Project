@@ -14,8 +14,14 @@ for i in range(1,22):
     """LICENSE"""
     # LICENSE FOR ACADEMIC VERSION OF GUROBI
     # Create an environment with your WLS license
-    #params = {    }
-    #env = gp.Env(params=params)
+    """
+    params = {
+    "WLSACCESSID": '',
+    "WLSSECRET": '',
+    "LICENSEID": ,
+    }
+    env = gp.Env(params=params)
+    """
 
     '''Reading from the file and visualization'''
     f = open(file_name, "r")
@@ -35,7 +41,7 @@ for i in range(1,22):
     m = num_couriers
     COURIERS = list(range(1,m+1))
 
-    model = Model("VRP") #,env=env)
+    model = Model("VRP",env=env)
     x = model.addVars(V,V,COURIERS, vtype=GRB.BINARY, name="x_ijk")
     y = model.addVars(V,COURIERS, vtype=GRB.BINARY, name="y_ik")
     u = model.addVars(CUSTOMERS, COURIERS, vtype=GRB.CONTINUOUS, name="u_ik")
