@@ -13,11 +13,11 @@ timeout=300000
 solver="$1"
 model="$2"
 
-model_path="./Models/$model"
+model_path="CP/Models/$model"
 
 model_name="${model%.mzn}"
 
-output_file="${model_name}.txt"
+output_file="CP/Outputs/${model_name}.txt"
 
 #Clean output file
 > "$output_file"
@@ -25,7 +25,7 @@ output_file="${model_name}.txt"
 echo "Solver: $solver" >> "$output_file"
 echo "Model: $model" >> "$output_file"
 
-instance_dir="./Instances"
+instance_dir="CP/Instances"
 
 for instance in "$instance_dir"/*.dzn; do
 
