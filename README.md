@@ -26,9 +26,9 @@ Where the possible methods are:
 - chuffed
 - gecode
 
-Here is an example for the _CP_A_Chuffed.mzc_:
+Here is an example for the _CP_A_Chuffed.mzc_ model:
 ```
-bash ./CP/run_CP_all_instances.sh chuffed /CP/CP_A_Chuffed.mzn
+bash ./CP/run_CP_all_instances.sh chuffed CP_A_Chuffed.mzn
 ```
 
 ### SAT
