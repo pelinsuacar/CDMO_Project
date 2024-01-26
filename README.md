@@ -10,11 +10,11 @@ Project exam for the course in "Combinatorial Decision Making and Optimization" 
 First download only the <a href="https://github.com/pelinsuacar/CDMO_Project/blob/main/Dockerfile">Dockerfile</a>, then on the working directory run:
 
 ```
-sudo docker build . -t cdmo
+docker build . -t cdmo
 ```
 Then to run it and enter the shell:
 ```
-sudo docker run -it cdmo
+docker run -it cdmo
 ```
 
 ### CP
