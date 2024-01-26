@@ -2,6 +2,7 @@ from sat_utils import *
 import time
 import sys
 
+print(os.getcwd())
 ''' RETRIEVE INSTANCE '''
 if len(sys.argv) > 1:
     instance_filename = sys.argv[1]
@@ -9,7 +10,7 @@ if len(sys.argv) > 1:
 else:
     print("No instance provided.\nUsage: python sat_model.py inst<num>.dat")
     sys.exit(1)    
-m, n, l, S, D, n_int_encoding = read_instance(f"../Instances/inst{instance}.dat", instance)
+m, n, l, S, D, n_int_encoding = read_instance(f"Instances/inst{instance}.dat", instance)
 encodings=["heule", "bitwise"]
 solvers=[ "cdcl", "wsat"] 
 approaches=["cdcl_he", "wsat_he", "cdcl_bin", "wsat_bin"]
@@ -222,5 +223,5 @@ for enc in encodings: #2 loops to try 2 encodings
 
         
 ''' CREATE JSON FILE '''
-filename="../res/SAT/"+str(instance)+".json"
+filename="res/SAT/"+str(instance)+".json"
 make_json(filename, approaches, times, distances, solutions, is_optimal_vec)
