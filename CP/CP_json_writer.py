@@ -79,7 +79,7 @@ def find_route_b(pred, last, vehicle, num_courier):
 
 def main():
     
-    input_folder = "./Outputs" #replace this with the path containing .txt files for the outputs
+    input_folder = "./CP/Outputs" #replace this with the path containing .txt files for the outputs
     output_folder = "./res/CP"
 
     all_instances_data = {1: {}, 2: {}, 3: {}, 4: {}, 5: {} ,6: {}, 7: {}, 8: {}, 9: {}, 10: {}, 11: {}, 12: {}, 13: {}, \
