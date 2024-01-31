@@ -68,3 +68,8 @@ To run the SMT part, run:
 python3 ./SMT/SMT.py
 ```
 
+## Time plots
+The folder <a href="https://github.com/pelinsuacar/CDMO_Project/tree/main/time_plots"> time_plots </a> contains the plots showing the times of execcution for each model, for the instances where at least one optimal solution has been found. <br>
+(Disclaimer: Some of them are hard to read, but it serves just as an easier way to see all run times instead of having to look into each json file, and they are not included in the report file)<br>
+Running the _time_plot_maker.py_ script will automatically create all the plots. 
+
