@@ -1,10 +1,10 @@
 # CDMO_Project
 Project exam for the course in _"Combinatorial Decision Making and Optimization"_ of the Master's degree in Artificial Intelligence, University of Bologna.
 ### Contributors
-- Pelinsu Acar
-- Daniele Napolitano
-- Alessandro Folloni
-- Leonardo Petrilli
+- Pelinsu Acar (CP)
+- Daniele Napolitano (SAT)
+- Alessandro Folloni (MIP)
+- Leonardo Petrilli (SMT)
 
 # Docker instructions
 First download only the <a href="https://github.com/pelinsuacar/CDMO_Project/blob/main/Dockerfile">Dockerfile</a>, then on the working directory run:
