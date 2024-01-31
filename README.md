@@ -22,7 +22,7 @@ docker run -it cdmo
 ### CP
 To run the code for the Constraint Programming part, run the following commands:
 ```
-bash ./CP/run_CP_all_instances.sh <method> <model_name.mzc>
+./CP/run_CP_all_instances.sh <method> <model_name.mzc>
 ```
 Where the possible methods are:
 - chuffed
@@ -30,13 +30,14 @@ Where the possible methods are:
 
 Here is an example for the _CP_A_Chuffed.mzc_ model:
 ```
-bash ./CP/run_CP_all_instances.sh chuffed CP_A_Chuffed.mzn
+./CP/run_CP_all_instances.sh chuffed CP_A_Chuffed.mzn
 ```
 
 After running all the models, to generate the final json files, run:
 ```
 python3 ./CP/CP_json_writer.py
 ```
+making sure that the output .txt files are inside ./CP/Outputs folder
 
 ### SAT
 To run the SAT models, run:
