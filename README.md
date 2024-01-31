@@ -17,7 +17,7 @@ Then to run it and enter the shell:
 docker run -it cdmo
 ```
 ## Run the models
-**NOTE:** Be sure to stay on the main /src directory when running all the commands below!
+<ins>**NOTE: Be sure to stay on the main /src directory when running all the commands below!**</ins>
 
 ### CP
 To run the code for the Constraint Programming part, run the following commands:
