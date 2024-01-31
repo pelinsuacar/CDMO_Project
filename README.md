@@ -19,15 +19,6 @@ docker run -it cdmo
 ## Run the models
 <ins>**NOTE: Be sure to stay on the main /src directory when running all the commands below!**</ins>
 
-Warning: In case of getting a "syntax error: unexpected end of file", these two steps should fix the problem:
-```
-sudo apt-get install dos2unix
-```
-```
-dos2unix <script_name.sh>
-```
-
-
 ### CP
 To run the code for all the instances in CP, run the following command:
 ```
