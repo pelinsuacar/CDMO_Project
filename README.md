@@ -19,18 +19,35 @@ docker run -it cdmo
 ## Run the models
 <ins>**NOTE: Be sure to stay on the main /src directory when running all the commands below!**</ins>
 
+Warning: In case of getting a "syntax error: unexpected end of file", these two steps should fix the problem:
+```
+sudo apt-get install dos2unix
+```
+```
+dos2unix <script_name.sh>
+```
+
+
 ### CP
-To run the code for the Constraint Programming part, run the following commands:
+To run the code for all the instances in CP, run the following command:
 ```
-./CP/run_CP_all_instances.sh <method> <model_name.mzc>
+./CP/run_CP_all_instances.sh <solver_name> <model_name.mzn>
 ```
-Where the possible methods are:
+Where the possible solvers are:
 - chuffed
 - gecode
 
 Here is an example for the _CP_A_Chuffed.mzc_ model:
 ```
 ./CP/run_CP_all_instances.sh chuffed CP_A_Chuffed.mzn
+```
+To run the code for a specific instance in CP, run the following command:
+```
+./CP/run_CP_instance.sh <solver_name> <model_name.mzn> <instance_name.dzn> <output_file_name.txt>
+```
+Here is an example for the instance 1 on _CP_A_Chuffed.mzc_ model:
+```
+./CP/run_CP_instance.sh chuffed CP_A_Chuffed.mzn inst01.dzn result.txt
 ```
 
 After running all the models, to generate the final json files, run:
