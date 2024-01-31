@@ -15,7 +15,7 @@ for i in range(1, 22):
         instance = "0"+str(i)
     else:
         instance = i
-    with open(f"../Instances/inst{instance}.dat") as file:
+    with open(f"Instances/inst{instance}.dat") as file:
         data = file.read().strip().splitlines()
 
     num_couriers = int(data[0])
@@ -129,6 +129,6 @@ for i in range(1, 22):
     except AttributeError as e:
         print("No value for the objective function was found.")
         results = {}
-    results_paths = f"../res/SMT/{instance}.json"
+    results_paths = f"res/SMT/{instance}.json"
     with open(results_paths, "w") as res_file:
         json.dump(results, res_file, indent=2)
